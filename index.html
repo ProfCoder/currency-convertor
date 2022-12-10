@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Convertor</title>
+    <link rel="icon" type="image/x-icon" href="./images/currency.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+<!---------------------------------------------------------------------------------->
+<!---------------------------------- HEADER ---------------------------------------->
+<!---------------------------------------------------------------------------------->
+    <header>
+        <div class="header-wrapper">
+          <a href="#"><img class="logo" src="./images/logo.png" alt="logo"/></a>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Банк</a></li>
+              <li><a href="#">Бизнес</a></li>
+              <li><a href="#">Инвестиции</a></li>
+              <li><a href="#">Страхование</a></li>
+              <li><a href="#">Мобайл</a></li>
+              <li><a href="#">Путушествия</a></li>
+              <li><a href="#">Расзвличения</a></li>
+            </ul>
+        </nav>
+        <button class="sign-button" type="button">Войти</button>
+      </div>
+    </header>
+<!---------------------------------------------------------------------------------->
+<!------------------------------- Main Section / Body ------------------------------>
+<!---------------------------------------------------------------------------------->
+    <div class="wrapper"> 
+      <main>
+        <h1>Конвертер валют онлайн</h1>
+          <div class="currency-wrapper">
+<!----------------------------  Want to Convert Section  --------------------------->
+            <section>
+                <p class="sub-header">У меня есть</p>
+                <div class="currencies fromCurrencySelection">
+                    <p class="currency-code-from currency-selected-by-default">RUB</p>
+                    <p class="currency-code-from">USD</p>
+                    <p class="currency-code-from">EUR</p>
+                    <p class="currency-code-from">GBP</p>
+                </div>
+                <div class="currency-box">
+                    <input class="currency-input fromCurrencyInput" type="number" name="from" value="1"/>
+                    <p class="current-rate rateFrom"></p>
+                </div>
+            </section>
+<!------------------------------ Want to Obtain Section  ---------------------------->
+            <section>
+              <p class="sub-header">Хочу приобрести</p>
+              <div class="currencies currencyToSelection">
+                  <p class="currency-code-to">RUB</p>
+                  <p class="currency-code-to currency-selected-by-default">USD</p>
+                  <p class="currency-code-to">EUR</p>
+                  <p class="currency-code-to">GBP</p>
+              </div>
+              <div class="currency-box">
+                  <input class="currency-input toCurrencyInput" type="number" name="to"/>
+                  <p class="current-rate rateTo"></p>
+              </div>
+          </section>
+        </div>
+      </main>
+  </div>
+  </body>      
+</html>
